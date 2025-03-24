@@ -99,7 +99,6 @@ ul li a{
 .banner-left i{
     font-family: "Pinyon Script", cursive;
     font-weight: 300;
-    font-size: 7rem;
 }
 .banner-left p{
     font-size: 16px;
@@ -163,12 +162,9 @@ ul li a{
     text-align: left;
 }
 
-/* meadium-size-device */
-@media screen and ((min-width: 600px) and (max-width: 1024px)){
-
-}
 /* small-device */
 @media screen and (max-width:599px) {
+    /* .header */
     ul{
         visibility: hidden;
     }
@@ -179,5 +175,34 @@ ul li a{
     .menu-icon{
         visibility: visible;
         font-size: 25px;
+        color: white;
+    }
+    .banner{
+        flex-direction: column;
+        margin:0px 60px;
+    }
+    .header-container{
+        max-width: 350px;
+    }
+    .banner-left{
+        max-width: 350px;
+        margin-top:30px;
+    }
+    .banner-left h1{
+        font-size: 2.5rem;
+    }
+    .btn-2{
+        margin-top:10px
+    }
+    .banner-right img{
+        top:-20px
+    }
+    .banner-card-top{
+        bottom:700px;
+        left: 230px;
+    }
+    .banner-card-bottom{
+        bottom: 500px;
+        left: 15px;
     }
 }
