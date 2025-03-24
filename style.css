@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+/* //ovarall-style// */
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+/* //shared-style// */
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+
+/* header */
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    padding: 50px;
+}
+.header-container{
+
+    max-width: 1400px;
+    margin:0px auto;
+}
+/* nav-bar */
+h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+}
+nav{
+    justify-content: space-between;
+}
+ul{
+    gap:47px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 37px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding:8px 16px;
+}
+.home{
+    background-color: rgb(230, 83, 60);
+    border-radius: 46px;
+}
+.menu-icon{
+    visibility: hidden;
+}
+/* meadium-size-device */
+@media screen and ((min-width: 600px) and (max-width: 1024px)){
+
+}
+/* small-device */
+@media screen and (max-width:599px) {
+    ul{
+        visibility: hidden;
+    }
+    nav{
+        align-items: center;
+        gap:40vw;
+    }
+    .menu-icon{
+        visibility: visible;
+        font-size: 25px;
+    }
+}
