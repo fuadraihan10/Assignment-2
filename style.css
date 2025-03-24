@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
 /* //ovarall-style// */
 *{
     padding: 0%;
@@ -18,14 +19,30 @@
 .align-center{
     align-items: center;
 }
-
+.btn{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px 16px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+}
+.btn:hover{
+    border: 0.5px solid rgb(57, 57, 57);
+    background-color: rgb(243, 140, 124);
+}
+.p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
 /* header */
 header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(1, 0, 0),rgba(53, 53, 53, 0) 100%);
     padding: 50px;
 }
 .header-container{
-
     max-width: 1400px;
     margin:0px auto;
 }
@@ -49,9 +66,10 @@ ul li{
 ul li a{
     text-decoration: none;
     color:white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    padding:8px 16px;
+    padding:11px 19px;
+
 }
 .home{
     background-color: rgb(230, 83, 60);
@@ -60,6 +78,91 @@ ul li a{
 .menu-icon{
     visibility: hidden;
 }
+
+/* banner */
+/* left-banner */
+.banner{
+    max-width: 1400px;
+    margin:0px auto;
+    gap: 10vw;
+    justify-content: space-between;
+}
+.banner-left{
+    width: 520px;
+
+}
+.banner-left h1{
+    font-size: 5.2rem;
+    font-weight: 900;
+    color: white;
+}
+.banner-left i{
+    font-family: "Pinyon Script", cursive;
+    font-weight: 300;
+    font-size: 7rem;
+}
+.banner-left p{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin:15px 0px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.btn-2{
+    background-color:transparent;
+    border: 1px solid rgb(255, 255, 255);
+}
+/* right-banner */
+.banner-right img{
+    position: relative;
+    left:0px;
+    bottom:-70px;
+    height:700px;
+}
+.banner-card-top{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 180px;
+    padding: 15px 10px;
+    flex-direction: column;
+    position: relative;
+    bottom:390px;
+    right:-13vw;
+}
+.banner-card-top h2{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    text-align: left;
+}
+.banner-card-bottom{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 190px;
+    padding: 15px 15px;
+    flex-direction: row;
+    position: relative;
+    bottom: 190px;
+    left:-5vw;
+    gap: 10px;
+}
+.icon0{
+    background-color: rgb(230, 83, 60);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.banner-card-bottom h4{
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    text-align: left;
+}
+
 /* meadium-size-device */
 @media screen and ((min-width: 600px) and (max-width: 1024px)){
 
