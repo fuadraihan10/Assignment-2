@@ -229,6 +229,51 @@ ul li a{
     border-radius: 18px;
 }
 
+/* bmi */
+.bmi h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.title{
+    
+    flex-direction: column;
+    margin: 0px auto;
+    max-width: 650px;
+    gap:30px;
+    margin-top:50px ;
+    margin-bottom: 50px;
+}
+.bmi{
+    background: rgb(34, 34, 34);
+    justify-content: space-around;
+}
+.chart{
+    flex-direction: column;
+    margin: 80px 0px;
+    gap:40px;
+}
+table,head,td,th{
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0px;
+    padding-left: 10px;
+}
+th{
+    color:white;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.calculator{
+    margin:70px 0px;
+    max-width: 800px;
+}
+.input{
+    width: 45%;
+}
+
 /* small-device */
 @media screen and (max-width:599px) {
     /* .header */
@@ -282,4 +327,5 @@ ul li a{
         max-width: 400px;
         flex-direction: column;
     }
+
 }
