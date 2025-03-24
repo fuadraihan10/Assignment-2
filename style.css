@@ -208,6 +208,27 @@ ul li a{
     border-radius: 50%;
 }
 
+/* run-* */
+.run{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    max-width: 1400px;
+    margin: 100px auto 0px auto;
+    justify-content: space-between;
+
+}
+.run-container{
+    margin:50px;
+}
+.run-container p{
+    margin:50px 0px;
+}
+    
+.run img{
+    width: 100%;
+    border-radius: 18px;
+}
+
 /* small-device */
 @media screen and (max-width:599px) {
     /* .header */
@@ -253,6 +274,11 @@ ul li a{
     }
     /* habits.* */
     .habits-container{
+        flex-direction: column;
+    }
+
+    /* run.0* */
+    .run{
         flex-direction: column;
     }
 }
