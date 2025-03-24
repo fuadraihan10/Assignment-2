@@ -291,6 +291,89 @@ td{
 form button{
     margin: 30px 10px;
 }
+/* team8 */
+.team{
+    max-width: 1400px;
+    margin:90px auto;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+}
+.team h2,.team p{
+    text-align: center;
+}
+.team p{
+    max-width: 670px;
+}
+.team-container{
+    margin-bottom:10px;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+.team-container img{
+    border-radius: 20px;
+    width: 400px;
+    height:300px;
+ }
+
+ /* footer* */
+ footer{
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+ .footer-container{
+    padding: 50px;
+    max-width: 1400px;
+    display:flex;
+    margin:0px auto;
+    justify-content: space-around;
+    gap:50px;
+
+ }
+ .fitness{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+ }
+ .fitness i{
+    color:rgb(230, 83, 60);
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+ }
+ .footer-child{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+ }
+ .footer-child h4{
+    font-size: 2.5rem;
+    color:white;
+
+ }
+ .footer-child p{
+    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 400;
+ }
+ hr{
+    width: 1400px;
+    background-color: rgb(57, 57, 57);
+    margin:0px uto;
+ }
+ .fp{
+    margin:50px;
+ }
 /* small-device */
 @media screen and (max-width:599px) {
     /* .header */
@@ -360,5 +443,13 @@ form button{
     }
     #sex{
         width:44%;
+    }
+    /* team* */
+    .team-container{
+        grid-template-columns: 400px;
+    }
+    /* footer* */
+    footer,.footer-container{
+        flex-direction: column;
     }
 }
